@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tab mới</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="avt.jpg">
+</head>
+<body>
+  <div class="main">
+    <div class="contain">
+
+      <div class="time">
+        <p>Thi đại học còn: <span id="timejs"></span> ngày</p>
+        <br>
+        <p> (Dự kiến 7/7/2022)</p>
+      </div>
+
+      <div class="search">
+        <div class="secrev">
+          <div class="searchboxrev">
+            <input class="sectionrev" id="rev" type="text" placeholder="Tìm kiếm"> <br>
+          </div>
+          <div class="btnrev">
+            <button style="background-color: #4285F4;" onclick="googlerev()">Google</button>
+            <button style="background-color: #E37151;" onclick="duckgorev()">DuckDuckGo</button>
+            <button style="background-color: #FF0000;" onclick="youtuberev()">Youtube</button>
+            <button style="background-color: #4CAF50;" onclick="w3rev()">W3Schools</button>
+          </div>
+        </div>
+        <div class="searchbox">
+          <input tabindex="1" class="section" id="gg" type="text" placeholder="Tìm kiếm bằng Google">
+          <button tabindex="6" style="background-color: #4285F4;" onclick="google()">Tìm</button> <br>
+        </div>
+        
+        <div class="searchbox">
+          <input tabindex="2" class="section" id="ytb" type="text" placeholder="Tìm kiếm trong Youtube">
+          <button tabindex="7" style="background-color: #FF0000;" onclick="youtube()">Tìm</button> <br>
+        </div>  
+
+        <div class="searchbox">
+          <input tabindex="3" class="section" id="w3" type="text" placeholder="Tìm kiếm trong W3School">
+          <button tabindex="8" style="background-color: #4CAF50;" onclick="w3()">Tìm</button><br>
+        </div>
+      </div>
+
+      <div class="translatebox">
+        <textarea tabindex="4" rows="4" type="text" placeholder="Tiếng Việt"></textarea>
+        <textarea tabindex="5" rows="4" type="text" placeholder="Tiếng Anh"></textarea>
+      </div>
+       
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
